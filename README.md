@@ -29,3 +29,55 @@ Before running this project locally, make sure you have the following installed:
 ```bash
 git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
+
+
+Navigate to the backend folder:
+
+bash
+Copy code
+cd backend
+
+Install the necessary dependencies:
+
+bash
+Copy code
+npm install
+Set up YouTube API Key: You need to get a YouTube API key from the Google Cloud Console. Once you have the key, create a .env file in the backend directory and add the following:
+
+plaintext
+Copy code
+YOUTUBE_API_KEY=your_youtube_api_key
+Replace your_youtube_api_key with your actual YouTube Data API key.
+
+Start the backend server:
+
+bash
+Copy code
+npm start
+The backend should now be running on http://localhost:3000.
+
+Set up the Frontend:
+
+The frontend is built using React.
+
+Navigate to the frontend folder:
+
+bash
+Copy code
+cd frontend
+Install the necessary dependencies:
+
+bash
+Copy code
+npm install
+Update API URL: In frontend/src/App.js, ensure that the frontend is making requests to http://localhost:3000 (or your backend's deployed URL if applicable):
+
+javascript
+Copy code
+const response = await axios.post('http://localhost:3000/data/fetch-data', { youtubeLink });
+Start the React app:
+
+bash
+Copy code
+npm start
+The React app should now be running on http://localhost:3001.
