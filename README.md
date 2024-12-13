@@ -66,3 +66,4 @@ bash
 Copy code
 cd frontend
 Install the necessary dependencies
+npm run dev
