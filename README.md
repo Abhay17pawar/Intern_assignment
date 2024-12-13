@@ -65,19 +65,4 @@ Navigate to the frontend folder:
 bash
 Copy code
 cd frontend
-Install the necessary dependencies:
-
-bash
-Copy code
-npm install
-Update API URL: In frontend/src/App.js, ensure that the frontend is making requests to http://localhost:3000 (or your backend's deployed URL if applicable):
-
-javascript
-Copy code
-const response = await axios.post('http://localhost:3000/data/fetch-data', { youtubeLink });
-Start the React app:
-
-bash
-Copy code
-npm start
-The React app should now be running on http://localhost:3001.
+Install the necessary dependencies
